@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="@drawable/blue_round"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_food"
+            android:text="Usia 4 - 6 Bulan"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/detail_food"
+            android:text="Biasanya makanan bayi yang paling awal diperkenalkan adalah
+bubur sereal bayi yang dicampur ASI atau susu formula.
+Jangan terburu-buru memberikan bubur bayi atau makanan padat sejenisnya,  tapi perkenalkanlah secara perlahan. Caranya,  berikan satu sendok sereal lumat yang didekatkan pada mulut bayi. Jika bayi menolak, tunda sejenak atau tunggu beberapa hari sebelum mencoba lagi."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_food"
+        android:src="@drawable/food1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0.5"/>
+</LinearLayout>

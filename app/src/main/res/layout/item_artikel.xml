@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+    <ImageView
+        android:id="@+id/photo_artikel"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:src="@drawable/artikel1"/>
+    <TextView
+        android:id="@+id/title_artikel"
+        android:textSize="16sp"
+        android:text="Lakukan Hal Ini untuk Tumbuh Kembang si Kecil"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+</LinearLayout>

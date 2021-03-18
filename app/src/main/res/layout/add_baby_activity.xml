@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/roots">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:src="@drawable/baby1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+    </FrameLayout>
+    <TextView
+        android:text="Tambahkan data bayi anda"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/nama_bayi_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nama_bayi_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Nama Bayi"
+                android:textColor="#263238"
+                android:textColorHint="#000000"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jenis_kelamin_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/jenis_kelamin_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:textColor="#263238"
+            android:textColorHint="#000000"
+            android:hint="Jenis Kelamin"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/tanggal_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tanggal_daftar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:textColor="#263238"
+            android:textColorHint="#000000"
+            android:hint="Tanggal Lahir"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/hubungan_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/hubungan_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Hubungan dengan bayi"
+                android:textColor="#263238"
+                android:textColorHint="#000000"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <Button
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Tambahkan"
+        android:textColor="@color/white"
+        android:id="@+id/btn_tambah"
+        android:backgroundTint="#FF4646"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
