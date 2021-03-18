@@ -25,10 +25,11 @@
                 android:layout_height="wrap_content"
                 android:padding="20sp"
                 android:layout_marginEnd="20dp">
-                <ImageView
-                    android:src="@drawable/girl"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"/>
+                <TextView
+                    android:text="Female"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
             </FrameLayout>
             <FrameLayout
                 android:id="@+id/frame_boy"
@@ -36,10 +37,11 @@
                 android:layout_height="wrap_content"
                 android:padding="20sp"
                 >
-                <ImageView
-                    android:src="@drawable/boy"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"/>
+                <TextView
+                    android:text="Male"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
             </FrameLayout>
         </LinearLayout>
         <Button
