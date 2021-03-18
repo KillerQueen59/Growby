@@ -1,299 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:padding="15dp">
-            <ImageView
-                android:id="@+id/back"
-                android:src="@drawable/back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:text="Pesan Makanan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-        <View
-            android:background="@color/gray"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"/>
-        <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/lokasi_linear"
-                android:layout_margin="20dp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:text="Lokasi Pengiriman"
+                android:layout_height="60dp"
+                android:padding="15dp">
+                <ImageView
+                    android:id="@+id/back"
+                    android:src="@drawable/back"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"/>
+                    android:layout_height="wrap_content"/>
                 <TextView
-                    android:id="@+id/address_text"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/round_with_stroke"
-                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:hint="Tekan untuk mendapatkan alamat anda"
-                    tools:text ="Paris no 3 Surabaya"
+                    android:text="Pesan Makanan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
-
-        </LinearLayout>
-        <View
-            android:background="@color/gray"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"/>
-        <TextView
-            android:layout_margin="20dp"
-            android:textColor="@color/black"
-            android:text="Item(s)"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/food_photo"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/food1"
-                android:layout_width="110dp"
-                android:layout_height="80dp"/>
-            <TextView
-                android:id="@+id/food_name"
-                android:textSize="24sp"
-                tools:text="Paket Usia \n4 - 6 Bulan"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"/>
             <View
                 android:background="@color/gray"
-                android:layout_width="1dp"
-                android:layout_height="match_parent"/>
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/total_price"
-                    tools:text="Rp.50.000"
-                    android:textSize="18sp"
-                    android:textAlignment="center"
-                    android:layout_marginTop="5dp"
-                    android:textColor="@color/black"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                android:orientation="horizontal">
                 <LinearLayout
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginTop="10dp"
+                    android:id="@+id/lokasi_linear"
+                    android:layout_margin="20dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:id="@+id/btn_minus"
-                        android:backgroundTint="@color/red"
-                        android:background="@drawable/round"
-                        android:src="@drawable/minus"
-                        android:paddingHorizontal="2dp"
-                        android:layout_width="25dp"
-                        android:visibility="invisible"
-                        android:layout_height="25dp"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
                     <TextView
-                        android:id="@+id/count"
-                        android:text="0"
-                        android:textSize="20dp"
-                        android:textColor="@color/black"
-                        android:layout_marginHorizontal="20dp"
+                        android:text="Lokasi Pengiriman"
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/address_text"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_with_stroke"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:hint="Tekan untuk mendapatkan alamat anda"
+                        tools:text ="Paris no 3 Surabaya"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
-                    <ImageView
-                        android:id="@+id/btn_add"
-                        android:backgroundTint="@color/red"
-                        android:background="@drawable/round"
-                        android:src="@drawable/add"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"/>
                 </LinearLayout>
 
             </LinearLayout>
-        </LinearLayout>
-        <View
-            android:layout_marginTop="20dp"
-            android:background="@color/gray"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"/>
-        <LinearLayout
-            android:background="@drawable/round_with_stroke"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:paddingBottom="20dp">
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:text="Pengiriman"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
             <View
-                android:layout_marginTop="10dp"
-                android:layout_marginHorizontal="10dp"
                 android:background="@color/gray"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"/>
             <TextView
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:textSize="14sp"
+                android:layout_margin="20dp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Delivery fee"
-                android:layout_width="match_parent"
+                android:text="Item(s)"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/food_photo"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/food1"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"/>
                 <TextView
-                    android:id="@+id/distance"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:textSize="14sp"
+                    android:id="@+id/food_name"
+                    android:textSize="24sp"
+                    tools:text="Paket Usia \n4 - 6 Bulan"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:text="5 km"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"/>
+                <View
+                    android:background="@color/gray"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/total_price"
+                        tools:text="Rp.50.000"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/btn_minus"
+                            android:backgroundTint="@color/red"
+                            android:background="@drawable/round"
+                            android:src="@drawable/minus"
+                            android:paddingHorizontal="2dp"
+                            android:layout_width="25dp"
+                            android:visibility="invisible"
+                            android:layout_height="25dp"/>
+                        <TextView
+                            android:id="@+id/count"
+                            android:text="0"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:id="@+id/btn_add"
+                            android:backgroundTint="@color/red"
+                            android:background="@drawable/round"
+                            android:src="@drawable/add"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="20dp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:background="@drawable/round_with_stroke"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingBottom="20dp">
                 <TextView
-                    android:id="@+id/distance_fee"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
-                    android:textSize="14sp"
+                    android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:text="Rp20.000"
-                    android:textAlignment="textEnd"
+                    android:text="Pengiriman"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Delivery fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="5 km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/distance_fee"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="Rp20.000"
+                        android:textAlignment="textEnd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
             </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/round_with_stroke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/discount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:id="@+id/discount_name"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:text="Membeli 5 Paket"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/discount_ammount"
+                    android:layout_width="match_parent"
+                    android:text="-Rp20.000"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
         </LinearLayout>
         <LinearLayout
-            android:background="@drawable/round_with_stroke"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:padding="10dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:src="@drawable/discount"
-                android:layout_width="40dp"
-                android:layout_height="40dp"/>
-            <TextView
-                android:id="@+id/discount_name"
-                android:layout_width="wrap_content"
-                android:ellipsize="end"
-                android:text="Membeli 5 Paket"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:id="@+id/discount_ammount"
+            android:layout_height="62dp"
+            android:orientation="vertical">
+            <View
+                android:background="@color/gray"
                 android:layout_width="match_parent"
-                android:text="-Rp20.000"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textAlignment="viewEnd"
-                android:layout_marginLeft="5dp"
+                android:layout_height="2dp"/>
+            <FrameLayout
                 android:layout_marginTop="5dp"
-                android:layout_height="wrap_content"/>
+                android:paddingHorizontal="20sp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:text="Total"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_marginHorizontal="10dp"
+                        android:id="@+id/total_price_total"
+                        android:text="Rp50.000"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_order"
+                    android:layout_gravity="end"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"/>
+            </FrameLayout>
         </LinearLayout>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_gravity="bottom"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:orientation="vertical">
-        <View
-            android:background="@color/gray"
+        <LinearLayout
+            android:id="@+id/order_progress"
             android:layout_width="match_parent"
-            android:layout_height="2dp"/>
-        <FrameLayout
-            android:layout_marginTop="5dp"
-            android:paddingHorizontal="20sp"
-            android:background="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <LinearLayout
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="#3e161616">
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <TextView
-                    android:text="Total"
-                    android:textSize="17sp"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:layout_marginHorizontal="10dp"
-                    android:id="@+id/total_price_total"
-                    android:text="Rp50.000"
-                    android:textStyle="bold"
-                    android:textSize="24sp"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-            <Button
-                android:id="@+id/btn_order"
-                android:layout_gravity="end"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="PESAN"/>
-        </FrameLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/order_progress"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone"
-        android:gravity="center"
-        android:background="#3e161616">
-        <ProgressBar
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-    </LinearLayout>
-</FrameLayout>
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

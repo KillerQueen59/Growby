@@ -1,81 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="270dp">
-        <ImageView
-            android:id="@+id/photo_detail"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/artikel1"
-            android:scaleType="fitXY"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="#3e161616"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="30dp"
-            android:layout_gravity="bottom">
+            android:layout_height="270dp">
+            <ImageView
+                android:id="@+id/photo_detail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/artikel1"
+                android:scaleType="fitXY"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#3e161616"/>
             <LinearLayout
-                android:layout_gravity="bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="30dp"
+                android:layout_gravity="bottom">
+                <LinearLayout
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/date_detail"
+                        android:text="15 Maret 2020"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@color/white"
+                        android:layout_width="1dp"
+                        android:layout_height="18sp"/>
+                    <TextView
+                        android:id="@+id/source_detail"
+                        android:text="15 Maret 2020"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
                 <TextView
-                    android:id="@+id/date_detail"
-                    android:text="15 Maret 2020"
+                    android:id="@+id/title_detail"
+                    android:textSize="30dp"
                     android:textColor="@color/white"
-                    android:layout_width="wrap_content"
+                    android:text="Makanan untuk si kecil"
+                    android:layout_width="255dp"
                     android:layout_height="wrap_content"/>
-                <View
-                    android:layout_marginHorizontal="5dp"
-                    android:background="@color/white"
-                    android:layout_width="1dp"
-                    android:layout_height="18sp"/>
-                <TextView
-                    android:id="@+id/source_detail"
-                    android:text="15 Maret 2020"
-                    android:textColor="@color/white"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+
             </LinearLayout>
-            <TextView
-                android:id="@+id/title_detail"
-                android:textSize="30dp"
-                android:textColor="@color/white"
-                android:text="Makanan untuk si kecil"
-                android:layout_width="255dp"
-                android:layout_height="wrap_content"/>
 
-        </LinearLayout>
-
-        <ImageView
-            android:layout_margin="10dp"
-            android:id="@+id/back"
-            android:background="@drawable/round"
-            android:src="@drawable/back"
-            android:tint="@color/red"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:padding="6dp"/>
-    </FrameLayout>
-    <TextView
-        android:layout_marginHorizontal="20dp"
-        android:textColor="@color/black"
-        android:id="@+id/detail_detail"
-        tools:text="   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate vestibulum feugiat eleifend parturient porta velit feugiat amet. Amet congue aliquet dictumst maecenas aliquam. Tincidunt id non id sed magna. Sed diam et feugiat sed natoque vitae feugiat nec. Sapien tempus egestas gravida diam, aliquam tristique libero ut. In et, ut et pellentesque. Tristique ac feugiat tellus diam lorem eget sem dignissim montes. Volutpat duis vitae mattis elit.
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/back"
+                android:background="@drawable/round"
+                android:src="@drawable/back"
+                android:tint="@color/red"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"/>
+        </FrameLayout>
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/detail_detail"
+            tools:text="   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate vestibulum feugiat eleifend parturient porta velit feugiat amet. Amet congue aliquet dictumst maecenas aliquam. Tincidunt id non id sed magna. Sed diam et feugiat sed natoque vitae feugiat nec. Sapien tempus egestas gravida diam, aliquam tristique libero ut. In et, ut et pellentesque. Tristique ac feugiat tellus diam lorem eget sem dignissim montes. Volutpat duis vitae mattis elit.
 
 
         Phasellus ultricies et sed pharetra rutrum augue tellus feugiat. Orci, malesuada egestas ultrices cursus cursus. Vel enim bibendum vitae volutpat sed aenean enim. Enim, scelerisque et odio phasellus. At eget ut pharetra quis ornare nisi, non. Nibh amet, nisl dis id velit, scelerisque sapien. Feugiat varius in maecenas condimentum ipsum egestas tortor. Nibh purus viverra suspendisse ultricies quis in. Ullamcorper tellus lacinia at ut sem. Mauris morbi pretium congue et magna amet facilisis eu nulla. Id vivamus at tellus libero. Enim fringilla sed auctor ma"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-</LinearLayout>
+
+</ScrollView>

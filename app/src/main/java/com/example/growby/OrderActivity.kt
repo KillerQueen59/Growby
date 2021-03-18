@@ -44,9 +44,6 @@ class OrderActivity: AppCompatActivity(){
     val PERMISSION_ID = 1010
     lateinit var locationManager: LocationManager
 
-
-
-
     lateinit var model:OrderViewModel
     lateinit var modelFactory: OrderViewModelFactory
 

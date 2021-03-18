@@ -1,101 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/white"
     >
-    <ImageView
-        android:layout_margin="50dp"
-        android:src="@drawable/splash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:tint="#FF4646" />
-
-    <View
-        android:layout_marginTop="20dp"
-        android:background="#DDDDDD"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
     <LinearLayout
-        android:id="@+id/email_frame"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_margin="50dp"
+            android:src="@drawable/splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="#FF4646" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#DDDDDD"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/email_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="Email"
-                android:textColor="#263238"
-                android:textColorHint="#000000"
-                android:imeOptions="actionUnspecified"
-                android:inputType="text"
-                android:maxLines="1"
-                android:singleLine="true" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
-    <View
-        android:background="#DDDDDD"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-    <LinearLayout
-        android:id="@+id/password_frame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/email_frame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/password_text"
+                <EditText
+                    android:id="@+id/email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Email"
+                    android:textColor="#263238"
+                    android:textColorHint="#000000"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <View
+            android:background="#DDDDDD"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/password_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:hint="Password"
-                android:textColor="#263238"
-                android:textColorHint="#000000"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true" />
+                app:passwordToggleEnabled="true">
 
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
-    <View
-        android:background="#DDDDDD"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"/>
-    <Button
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text="Masuk"
-        android:textColor="@color/white"
-        android:id="@+id/btn_masuk"
-        android:backgroundTint="#FF4646"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/password_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Password"
+                    android:textColor="#263238"
+                    android:textColorHint="#000000"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <View
+            android:background="#DDDDDD"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <Button
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:id="@+id/btn_masuk"
+            android:backgroundTint="#FF4646"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
         <FrameLayout
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:gravity="center"
                 android:layout_width="match_parent"
@@ -115,6 +119,8 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
-    </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
 
-</LinearLayout>
+
+</ScrollView>
